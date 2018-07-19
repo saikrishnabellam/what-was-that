@@ -1,0 +1,30 @@
+[
+  {
+    "essential": true,
+    "memory": 500,
+    "name": "web",
+    "cpu": 500,
+    "image": "labshare/omero-web-iviewer:nginx",
+    "portMappings": [
+        {
+            "containerPort": 4080
+
+        }
+    ]
+  },
+
+  {
+    "essential": true,
+    "memory": 250,
+    "name": "nginx",
+    "cpu": 250,
+    "image": "labshare/omero-nginx",
+    "portMappings": [
+        {
+            "containerPort": 80
+        }
+
+    ]
+  }
+]
+
